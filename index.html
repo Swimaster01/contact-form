@@ -5,38 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <br>
-    <h2>Contact Us</h2>
+  <body>
+    <form action="#" class="form">
+      <h2 class="form__title">Contact Us</h2>
 
-    <br>
+      <div class="name_container">
+        <div class="form__group">
+          <label for="fname">First Name *</label>
+          <input type="text" id="fname" name="fname" />
+        </div>
 
-    <div>
-<label for="fname">First Name *</label>
-      <input type="text" id="fname" name="fname" />
-      <label for="lname">Last Name * </label>
-      <input type="text" id="lname" name="lname" /></br>
-    </div>
-      
+        <div class="form__group">
+          <label for="lname">Last Name *</label>
+          <input type="text" id="lname" name="lname" />
+        </div>
+      </div>
 
-      <label for="email">Email Address *</label>
-      <input type="email" id="email" name="email"></br>
+      <div class="form__group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" />
+      </div>
 
+      <fieldset class="form__group">
+        <legend>Query Type *</legend>
+        <label>
+          <input
+            type="radio"
+            id="general"
+            name="query"
+            value="General Enquiry"
+          />
+          General Enquiry
+        </label>
+        <label>
+          <input
+            type="radio"
+            id="support"
+            name="query"
+            value="Support Request"
+          />
+          Support Request
+        </label>
+      </fieldset>
 
-      <label for="query">Query Type *</label></br>
-      <input type="radio" id="general" name="query" value="General Enquiry">
-      <label for="general"> General Enquiry </label>
-      <input type="radio" id="support" name="query" value="Support Request">
-      <label for="support"> Support Request</label>
+      <div class="form__group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
 
-      <br>
-
-      <label for="">Message *</label>
-      <textarea name="message" id="message"></textarea>
-
-      
-
-
+      <button type="submit" class="form__submit">Send</button>
     </form>
   </body>
 </html>
